@@ -1,0 +1,315 @@
+@font-face {
+  font-family: "UrbanTribe";
+  src: url("../fonts/Urban-Tribe.ttf");
+}
+
+@font-face {
+  font-family: "GoodTimes";
+  src: url("../fonts/Good-Times.otf");
+}
+
+@font-face {
+  font-family: "Amble";
+  src: url("../fonts/Amble-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Amble";
+  src: url("../fonts/Amble-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Amble";
+  src: url("../fonts/Amble-Light.ttf");
+  font-weight: lighter;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 10px;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+.header {
+  padding: 15px;
+  font-family: 'GoodTimes';
+  font-weight: 400;
+  letter-spacing: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  overflow: auto;
+  background-image: url("/images/background.png");
+  background-size: 300%;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header .logo {
+  margin-top: 10px;
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .logo__image {
+  margin-bottom: 15px;
+  max-width: 30%;
+  height: auto;
+}
+
+.header .logo__text {
+  max-width: 60%;
+  height: auto;
+}
+
+.header .header__slogan {
+  margin-bottom: 40px;
+  font-size: 3.6rem;
+  line-height: 5rem;
+  text-align: center;
+  color: #E5E5E5;
+}
+
+.header .header__slogan--last {
+  color: #FAAd37;
+}
+
+.header .header__slogan-second {
+  margin-bottom: 100px;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #FAAd37;
+}
+
+.header .header__btn {
+  background-color: transparent;
+  margin: 0 auto 120px auto;
+  padding: 12px 48px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: 'Amble';
+  font-size: 2rem;
+  text-align: center;
+  color: #FAAd37;
+  border: 4px solid #FAAd37;
+  border-radius: 5px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.header .header__btn:hover {
+  color: #E5E5E5;
+  background-color: #FAAd37;
+}
+
+@media screen and (min-width: 576px) {
+  .header .logo {
+    font-size: 4rem;
+  }
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navigation #menu__toggle {
+  opacity: 0;
+}
+
+.navigation #menu__toggle:checked + .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.navigation #menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.navigation #menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.navigation #menu__toggle:checked ~ .menu__box {
+  top: 0 !important;
+}
+
+.navigation .menu__btn {
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  width: 28px;
+  height: 32px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.navigation .menu__btn > span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #FAAd37;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.navigation .menu__btn > span::before, .navigation .menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #FAAd37;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.navigation .menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+
+.navigation .menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.navigation .menu__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #202020;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.navigation .menu__item {
+  display: block;
+  padding: 24px 48px;
+  color: #E5E5E5;
+  font-family: 'GoodTimes', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.navigation .menu__item:hover {
+  color: #FAAd37;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation .menu__btn {
+    display: none;
+  }
+}
+
+.pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.trainings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.galery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 3000px;
+}
+/*# sourceMappingURL=style.css.map */
