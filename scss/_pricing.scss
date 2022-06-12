@@ -9,20 +9,19 @@
     overflow: auto;
 
     .pricing__title {
-        letter-spacing: 1rem;
         color: $color-yellow;
         font-size: 3.6rem;
     }
 
-    .element {
+    .pricing-element {
         margin-top: 55px;
         
-        .element__title{
+        .pricing-element__title{
             color: $color-yellow;
             font-size: 2.4rem;
         }
 
-        .element__subtitle{
+        .pricing-element__subtitle{
             margin-top: 26px;
             margin-bottom: 26px;
             font-family: 'Amble';

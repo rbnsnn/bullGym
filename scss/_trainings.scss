@@ -1,4 +1,44 @@
 .trainings {
+    padding: 15px;
+    font-family: 'GoodTimes';
+    font-weight: 400;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    text-align: center;
+    overflow: auto;
+
+    .trainings-element {
+        margin-top: 55px;
+
+        .trainings-element__title {
+            color: $color-yellow;
+            font-size: 3.6rem;
+        }
+
+        .trainings-element__description{
+            margin-top: 26px;
+            margin-bottom: 26px;
+            font-family: 'Amble';
+            font-weight: normal;
+            font-size: 2.4rem;
+            color: $color-font;
+        }
+
+        .trainings-element__info {
+            font-family: 'Amble';
+            font-weight: normal;
+            color: $color-font;
+            font-size: 3.2rem;
+        }
+
+        .trainings-element__link {
+            text-decoration: none;
+            font-family: 'Amble';
+            font-weight: normal;
+            color: $color-yellow;
+            font-size: 3.2rem;
+        }
+    }
+
 }

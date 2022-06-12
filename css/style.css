@@ -277,21 +277,20 @@ body {
 }
 
 .pricing .pricing__title {
-  letter-spacing: 1rem;
   color: #FAAd37;
   font-size: 3.6rem;
 }
 
-.pricing .element {
+.pricing .pricing-element {
   margin-top: 55px;
 }
 
-.pricing .element .element__title {
+.pricing .pricing-element .pricing-element__title {
   color: #FAAd37;
   font-size: 2.4rem;
 }
 
-.pricing .element .element__subtitle {
+.pricing .pricing-element .pricing-element__subtitle {
   margin-top: 26px;
   margin-bottom: 26px;
   font-family: 'Amble';
@@ -301,12 +300,54 @@ body {
 }
 
 .trainings {
+  padding: 15px;
+  font-family: 'GoodTimes';
+  font-weight: 400;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
+  overflow: auto;
+}
+
+.trainings .trainings-element {
+  margin-top: 55px;
+}
+
+.trainings .trainings-element .trainings-element__title {
+  color: #FAAd37;
+  font-size: 3.6rem;
+}
+
+.trainings .trainings-element .trainings-element__description {
+  margin-top: 26px;
+  margin-bottom: 26px;
+  font-family: 'Amble';
+  font-weight: normal;
+  font-size: 2.4rem;
+  color: #E5E5E5;
+}
+
+.trainings .trainings-element .trainings-element__info {
+  font-family: 'Amble';
+  font-weight: normal;
+  color: #E5E5E5;
+  font-size: 3.2rem;
+}
+
+.trainings .trainings-element .trainings-element__link {
+  text-decoration: none;
+  font-family: 'Amble';
+  font-weight: normal;
+  color: #FAAd37;
+  font-size: 3.2rem;
 }
 
 .galery {
