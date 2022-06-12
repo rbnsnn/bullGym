@@ -38,6 +38,10 @@
 
 body {
   line-height: 1;
+  background-image: url("../images/background.png");
+  background-size: 300%;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .header {
@@ -57,10 +61,6 @@ body {
           justify-content: center;
   text-align: center;
   overflow: auto;
-  background-image: url("../images/background.png");
-  background-size: 300%;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 .header .logo {
@@ -90,7 +90,7 @@ body {
 }
 
 .header .header__slogan {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-size: 3.6rem;
   line-height: 5rem;
   text-align: center;
@@ -259,12 +259,45 @@ body {
 }
 
 .pricing {
+  padding: 15px;
+  font-family: 'GoodTimes';
+  font-weight: 400;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
+  overflow: auto;
+}
+
+.pricing .pricing__title {
+  letter-spacing: 1rem;
+  color: #FAAd37;
+  font-size: 3.6rem;
+}
+
+.pricing .element {
+  margin-top: 55px;
+}
+
+.pricing .element .element__title {
+  color: #FAAd37;
+  font-size: 2.4rem;
+}
+
+.pricing .element .element__subtitle {
+  margin-top: 26px;
+  margin-bottom: 26px;
+  font-family: 'Amble';
+  font-weight: normal;
+  font-size: 2rem;
+  color: #E5E5E5;
 }
 
 .trainings {
@@ -310,6 +343,5 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 3000px;
 }
 /*# sourceMappingURL=style.css.map */
