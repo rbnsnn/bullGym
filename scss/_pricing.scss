@@ -8,7 +8,7 @@
     text-align: center;
     overflow: auto;
 
-    .pricing__title {
+    &__title {
         color: $color-yellow;
         font-size: 3.6rem;
     }
@@ -16,12 +16,12 @@
     .pricing-element {
         margin-top: 55px;
         
-        .pricing-element__title{
+        &__title{
             color: $color-yellow;
             font-size: 2.4rem;
         }
 
-        .pricing-element__subtitle{
+        &__subtitle{
             margin-top: 26px;
             margin-bottom: 26px;
             font-family: 'Amble';

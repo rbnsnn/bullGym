@@ -276,7 +276,7 @@ body {
   overflow: auto;
 }
 
-.pricing .pricing__title {
+.pricing__title {
   color: #FAAd37;
   font-size: 3.6rem;
 }
@@ -285,12 +285,12 @@ body {
   margin-top: 55px;
 }
 
-.pricing .pricing-element .pricing-element__title {
+.pricing .pricing-element__title {
   color: #FAAd37;
   font-size: 2.4rem;
 }
 
-.pricing .pricing-element .pricing-element__subtitle {
+.pricing .pricing-element__subtitle {
   margin-top: 26px;
   margin-bottom: 26px;
   font-family: 'Amble';
@@ -321,12 +321,12 @@ body {
   margin-top: 55px;
 }
 
-.trainings .trainings-element .trainings-element__title {
+.trainings .trainings-element__title {
   color: #FAAd37;
   font-size: 3.6rem;
 }
 
-.trainings .trainings-element .trainings-element__description {
+.trainings .trainings-element__description {
   margin-top: 26px;
   margin-bottom: 26px;
   font-family: 'Amble';
@@ -335,14 +335,14 @@ body {
   color: #E5E5E5;
 }
 
-.trainings .trainings-element .trainings-element__info {
+.trainings .trainings-element__info {
   font-family: 'Amble';
   font-weight: normal;
   color: #E5E5E5;
   font-size: 3.2rem;
 }
 
-.trainings .trainings-element .trainings-element__link {
+.trainings .trainings-element__link {
   text-decoration: none;
   font-family: 'Amble';
   font-weight: normal;
@@ -359,13 +359,61 @@ body {
           justify-content: center;
 }
 
+.galery h2 {
+  line-height: 600px;
+  color: white;
+  font-size: 3rem;
+}
+
 .about {
+  padding: 15px;
+  font-family: 'GoodTimes';
+  font-weight: 400;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.about__title {
+  font-size: 3.6rem;
+  color: #FAAd37;
+  margin-bottom: 30px;
+}
+
+.about__content {
+  font-family: 'Amble';
+  font-size: 2.4rem;
+  color: #E5E5E5;
+  margin-bottom: 30px;
+}
+
+.about__expand {
+  font-size: 2.4rem;
+  color: #FAAd37;
+}
+
+.about__expand .fa-solid {
+  font-size: 2.4rem;
+}
+
+.about__expanded-content {
+  font-family: 'Amble';
+  font-size: 2.4rem;
+  color: #E5E5E5;
+  margin-bottom: 30px;
+}
+
+.about__expanded-content--hidden {
+  display: none;
 }
 
 .contact {

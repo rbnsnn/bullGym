@@ -1,4 +1,10 @@
 .galery {
     display: flex;
     justify-content: center;
+
+    h2{
+        line-height: 600px;
+        color: white;
+        font-size: 3rem;
+    }
 }

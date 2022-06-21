@@ -1,4 +1,43 @@
 .about {
+    padding: 15px;
+    font-family: 'GoodTimes';
+    font-weight: 400;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    &__title{
+        font-size: 3.6rem;
+        color: $color-yellow;
+        margin-bottom: 30px;
+    }
+
+    &__content{
+        font-family: 'Amble';
+        font-size: 2.4rem;
+        color: $color-font;
+        margin-bottom: 30px;
+    }
+
+    &__expand{
+        font-size: 2.4rem;
+        color: $color-yellow;
+
+        .fa-solid{
+            font-size: 2.4rem;
+        }
+    }
+
+    &__expanded-content{
+        font-family: 'Amble';
+        font-size: 2.4rem;
+        color: $color-font;
+        margin-bottom: 30px;
+
+        &--hidden {
+            display: none;
+        }
+    }
 }

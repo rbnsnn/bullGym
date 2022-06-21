@@ -11,12 +11,12 @@
     .trainings-element {
         margin-top: 55px;
 
-        .trainings-element__title {
+        &__title {
             color: $color-yellow;
             font-size: 3.6rem;
         }
 
-        .trainings-element__description{
+        &__description{
             margin-top: 26px;
             margin-bottom: 26px;
             font-family: 'Amble';
@@ -25,14 +25,14 @@
             color: $color-font;
         }
 
-        .trainings-element__info {
+        &__info {
             font-family: 'Amble';
             font-weight: normal;
             color: $color-font;
             font-size: 3.2rem;
         }
 
-        .trainings-element__link {
+        &__link {
             text-decoration: none;
             font-family: 'Amble';
             font-weight: normal;
