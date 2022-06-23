@@ -1,4 +1,26 @@
 .contact {
+    margin-top: 55px;
+    padding: 15px;
+    font-family: 'Amble';
+    font-weight: 400;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    &__item {
+        margin-top: 40px;
+
+        i {
+            margin-bottom: 10px;
+            font-size: 3.2rem;
+            color: $color-yellow;
+        }
+
+        &-text {
+            font-size: 2.4rem;
+            color: $color-font;
+        }
+    }
 }

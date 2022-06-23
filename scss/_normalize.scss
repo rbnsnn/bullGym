@@ -5,13 +5,25 @@
     border: 0;
     font-size: 10px;
     vertical-align: baseline;
+    scroll-behavior: smooth;
 }
 
 body {
     line-height: 1;
+    background-color: black;
+}
+
+.content {
+    max-width: 1920px;
+    margin: 0 auto;
     background-image: url('../images/background.png');
     background-size: 300%;
     background-position: center;
     background-attachment: fixed;
+}
 
+@media screen and (orientation: landscape) {
+    .content {
+        background-size: 100%;
+    }
 }

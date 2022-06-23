@@ -18,7 +18,6 @@
         font-family: 'Amble';
         font-size: 2.4rem;
         color: $color-font;
-        margin-bottom: 30px;
     }
 
     &__expand{
@@ -31,13 +30,39 @@
     }
 
     &__expanded-content{
+        max-height: 0px;
         font-family: 'Amble';
         font-size: 2.4rem;
         color: $color-font;
         margin-bottom: 30px;
+        overflow: hidden;
+        transition: max-height 1s;
 
-        &--hidden {
-            display: none;
+        &--visible {
+            max-height: 500px;
+            display: block;
+            transition: max-height 1s ease-in;
+        }
+    }
+
+    &__hours-title {
+        margin-top: 80px;
+        font-size: 3.6rem;
+        color: $color-yellow;
+        margin-bottom: 30px;
+    }
+
+    &__hours-item{
+        margin-top: 30px;
+
+        .hours-item__title {
+            font-size: 2.4rem;
+            color: $color-yellow;
+        }
+
+        .hours-item__content {
+            font-size: 2.4rem;
+            color: $color-font;
         }
     }
 }

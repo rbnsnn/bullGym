@@ -68,10 +68,12 @@
     }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px){
     .header{
-        .logo{
-            font-size: 4rem;
+        
+        .logo {
+            max-width: 330px;
+            left: 300px;
         }
     }
 }

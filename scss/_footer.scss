@@ -1,4 +1,24 @@
 .footer {
+    margin-top: 55px;
+    padding: 15px;
+    font-family: 'Amble';
+    font-weight: 400;
+    background-color: black;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    &__content {
+        font-size: 1.2rem;
+        letter-spacing: 5px;
+        color: $color-font;
+        line-height: 50px;
+
+        i {
+            color: $color-yellow;
+            font-size: 1.2rem;
+        }
+    }
 }
