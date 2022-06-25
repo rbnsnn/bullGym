@@ -22,3 +22,20 @@ menuItems.forEach(element => {
         menuToggle.checked = false
     })
 })
+
+// Carousel
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    slidesPerView: 3,
+    spaceBetween: 30,
+    zoom: true,
+    loop: true,
+
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+});
