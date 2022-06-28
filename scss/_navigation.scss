@@ -98,6 +98,24 @@
             color: $color-yellow;
         } 
     }
+
+    .menu__icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .menu__item--icon{
+       color: $color-yellow;
+
+       > i {
+        font-size: 2.4rem;
+       }
+
+       &:hover {
+        color: $color-font;
+       }
+    }
 }
 
 @media screen and (orientation: landscape){
@@ -111,9 +129,92 @@
 }
 
 @media screen and (min-width: 768px){
+
+    .logo-menu__container {
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .navigation {
+        position: sticky;
+        top: 0;
+        .menu__box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+            top: -50px;
+            height: 20px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: transparent;
+            box-shadow: none;
+            transition: none;
+        }
+
+        .menu__item {
+            display: flex;
+            padding: 0px 10px;
+            color: $color-font;
+            font-family: 'Amble', sans-serif;
+            font-size: 1.6rem;
+            font-weight: normal;
+            text-decoration: none;
+            letter-spacing: normal;
+            transition-duration: .25s;
+        }
+
         .menu__btn {
             display: none;
         }
+        .menu__item--icon{
+            color: $color-yellow;
+         }
     }
+}
+
+@media screen and (min-width: 1025px){
+
+    .logo-menu__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 150px;
+    }
+    .navigation {
+
+        .menu__box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+            top: -30px;
+            height: 20px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: transparent;
+            box-shadow: none;
+            transition: none;
+        }
+
+        .menu__item {
+            display: flex;
+            padding: 0px 24px;
+            color: $color-font;
+            font-family: 'Amble', sans-serif;
+            font-size: 1.6rem;
+            font-weight: normal;
+            text-decoration: none;
+            letter-spacing: normal;
+            transition-duration: .25s;
+        }
+        .menu__item--icon{
+            color: $color-yellow;
+         }
+        
+}
 }

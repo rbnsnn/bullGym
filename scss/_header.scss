@@ -7,7 +7,6 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    overflow: auto;
     
     .logo{
         margin-top: 10px;
@@ -29,8 +28,8 @@
         }
     }
 
-    .header__slogan {
-        margin-bottom: 20px;
+    &__slogan {
+        margin-top: 20px;
         font-size: 3.6rem;
         line-height: 5rem;
         text-align: center;
@@ -41,14 +40,14 @@
         }
     }
 
-    .header__slogan-second {  
+    &__slogan-second {  
         margin-bottom: 100px; 
         line-height: 2.5rem;
         text-align: center;
         color: $color-yellow;
     }
 
-    .header__btn {
+    &__btn {
         background-color: transparent;
         margin: 0 auto 120px auto;
         padding: 12px 48px;
@@ -66,14 +65,39 @@
             background-color: $color-yellow;
         }
     }
+
+    
 }
 
 @media screen and (min-width: 768px){
     .header{
-        
+    
         .logo {
+            position: relative;
+            margin-top: 25px;
+            min-width: 330px;
             max-width: 330px;
-            left: 300px;
         }
+
+        &__slogan-second {
+            margin-top: 130px;
+        }
+
+        &__back-to-top {
+            display: none;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+    
+            > i {
+                color: $color-yellow;
+                font-size: 5rem;
+            }
+        }
+
+        &__btn {
+            margin-top: 50px
+        }
+
     }
 }

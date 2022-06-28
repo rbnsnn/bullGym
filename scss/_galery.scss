@@ -2,23 +2,51 @@
     padding: 15px;
     font-family: 'GoodTimes';
     font-weight: 400;
+  
     display: flex;
     justify-content: center;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 
-    h2{
-        color: white;
-        font-size: 3rem;
+    &__title{
+      margin-bottom: 30px;
+      color: $color-yellow;
+      font-size: 3.6rem;
     }
 }
 
-.swiper {
-    width: 600px;
-    height: 300px;
-  }
 
-  .swiper-slide{
-    background-color: white;
+// .swiper-container > .swiper-slide__content {
+//   display: flex;
+//   align-items: center;
+// }
+.swiper-container{
+  position: relative;
+  margin: 0 auto;
+  height: 350px;
+  width: 90vw;
+  overflow: hidden;
+}
+
+.swiper-container > .swiper-slide__content {
+  position:absolute;
+  top:0;
+}
+
+.swiper-slide {
+  display:flex;
+  background: #eee;
+  align-items: center;
+  justify-content:center;
+  transition:all 200ms linear;
+  transform: scale(0.8);
+  
+  &.swiper-slide-active{
+    transform: scale(1);
+    background: #fc0
   }
+}
+.swiper-slide__content {
+  height: 300px;
+}

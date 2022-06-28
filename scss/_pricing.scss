@@ -32,3 +32,29 @@
     }
 
 }
+
+@media screen and (min-width: 768px){
+    .pricing {
+        background-image: url('../images/pricing-background.jpg');
+        .pricing-container {
+            padding: 50px 0 150px 0;
+            margin: 0px 100px 0 100px;
+            background: rgba( 0, 0, 0, 0.06);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(6.2px);
+            -webkit-backdrop-filter: blur(6.2px);
+
+            .element-container {
+                display: flex;
+                flex-direction: row;
+                align-items: space;
+                justify-content: space-around;
+                
+                .pricing-element{
+                    margin-top: 150px;
+                }
+            }
+        }
+    }
+}

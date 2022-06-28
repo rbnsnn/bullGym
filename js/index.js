@@ -25,17 +25,30 @@ menuItems.forEach(element => {
 
 // Carousel
 
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    slidesPerView: 3,
-    spaceBetween: 30,
-    zoom: true,
+const swiper = new Swiper(".swiper-container", {
+    spaceBetween: 1,
+    slidesPerView: 2,
+    centeredSlides: true,
+    roundLengths: true,
     loop: true,
-
-
-    // Navigation arrows
+    loopAdditionalSlides: 30,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
     }
 });
+
+const backToTop = document.querySelector('.header__back-to-top')
+
+window.onscroll = () => {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTop.style.display = "block";
+    } else {
+        backToTop.style.display = "none";
+    }
+}
+
+backToTop.addEventListener('click', () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+})
