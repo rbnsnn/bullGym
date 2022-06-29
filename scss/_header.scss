@@ -88,6 +88,7 @@
             position: fixed;
             right: 50px;
             bottom: 50px;
+            z-index: 999;
     
             > i {
                 color: $color-yellow;
@@ -96,7 +97,7 @@
         }
 
         &__btn {
-            margin-top: 50px
+            margin-top: 50px;
         }
 
     }

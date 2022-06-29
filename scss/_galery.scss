@@ -24,8 +24,8 @@
 .swiper-container{
   position: relative;
   margin: 0 auto;
-  height: 350px;
-  width: 90vw;
+  height: auto;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -36,17 +36,25 @@
 
 .swiper-slide {
   display:flex;
-  background: #eee;
+  width: auto;
   align-items: center;
   justify-content:center;
-  transition:all 200ms linear;
   transform: scale(0.8);
+  transition: all 200ms ease;
+  filter: brightness(30%);
   
   &.swiper-slide-active{
+    filter: brightness(100%);
     transform: scale(1);
-    background: #fc0
+    z-index: 99;
   }
 }
-.swiper-slide__content {
-  height: 300px;
+
+.swiper-button-prev {
+  color: $color-yellow !important;
+  
+}
+
+.swiper-button-next {
+  color: $color-yellow !important;
 }

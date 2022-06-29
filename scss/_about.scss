@@ -30,18 +30,19 @@
     }
 
     &__expanded-content{
+        cursor: pointer;
         max-height: 0px;
         font-family: 'Amble';
         font-size: 2.4rem;
         color: $color-font;
         margin-bottom: 30px;
         overflow: hidden;
-        transition: max-height 1s;
+        transition: max-height 0.2s;
 
         &--visible {
             max-height: 500px;
             display: block;
-            transition: max-height 1s ease-in;
+            transition: max-height 0.5s ease-in;
         }
     }
 
