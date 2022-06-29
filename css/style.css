@@ -483,6 +483,9 @@ body {
 @media screen and (min-width: 768px) {
   .pricing {
     background-image: url("../images/pricing-background.jpg");
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
   }
   .pricing .pricing-container {
     padding: 50px 0 150px 0;
@@ -562,6 +565,14 @@ body {
   font-weight: normal;
   color: #FAAd37;
   font-size: 3.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .trainings {
+    background-image: url("../images/trainings-background.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+  }
 }
 
 .galery {
