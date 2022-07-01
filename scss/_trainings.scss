@@ -23,6 +23,10 @@
             font-weight: normal;
             font-size: 2.4rem;
             color: $color-font;
+
+            &--yellow {
+                color: $color-yellow
+            }
         }
 
         &__info {
@@ -45,8 +49,16 @@
 
 @media screen and (min-width: 768px){
     .trainings{
+        margin-top: 0;
         background-image: url('../images/trainings-background.jpg');
+        background-size: cover;
         height: 100vh;
         background-attachment: fixed;
+
+        .trainings-element{
+            max-width: 40%;
+            position: relative;
+            left: 15%;
+        }
     }
 }

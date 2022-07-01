@@ -179,6 +179,7 @@ body {
 
 .navigation #menu__toggle {
   opacity: 0;
+  visibility: hidden;
 }
 
 .navigation #menu__toggle:checked + .menu__btn > span {
@@ -208,8 +209,7 @@ body {
   right: 20px;
   width: 28px;
   height: 32px;
-  cursor: pointer;
-  z-index: 1;
+  z-index: 9999;
 }
 
 .navigation .menu__btn > span {
@@ -266,6 +266,7 @@ body {
           box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   -webkit-transition-duration: .25s;
           transition-duration: .25s;
+  z-index: 999;
 }
 
 .navigation .menu__item {
@@ -488,14 +489,15 @@ body {
     background-attachment: fixed;
   }
   .pricing .pricing-container {
-    padding: 50px 0 150px 0;
+    padding: 100px 0 200px 0;
     margin: 0px 100px 0 100px;
     background: rgba(0, 0, 0, 0.06);
-    border-radius: 16px;
+    border-radius: 4px;
+    border-bottom: 1px solid #FAAd37;
     -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6.2px);
-    -webkit-backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: brightness(30%);
+            backdrop-filter: brightness(30%);
   }
   .pricing .pricing-container .element-container {
     display: -webkit-box;
@@ -552,6 +554,10 @@ body {
   color: #E5E5E5;
 }
 
+.trainings .trainings-element__description--yellow {
+  color: #FAAd37;
+}
+
 .trainings .trainings-element__info {
   font-family: 'Amble';
   font-weight: normal;
@@ -569,9 +575,16 @@ body {
 
 @media screen and (min-width: 768px) {
   .trainings {
+    margin-top: 0;
     background-image: url("../images/trainings-background.jpg");
+    background-size: cover;
     height: 100vh;
     background-attachment: fixed;
+  }
+  .trainings .trainings-element {
+    max-width: 40%;
+    position: relative;
+    left: 15%;
   }
 }
 
@@ -602,7 +615,7 @@ body {
 .swiper-container {
   position: relative;
   margin: 0 auto;
-  height: auto;
+  height: 70vh;
   width: 100%;
   overflow: hidden;
 }
@@ -645,6 +658,12 @@ body {
 
 .swiper-button-next {
   color: #FAAd37 !important;
+}
+
+@media screen and (min-width: 768px) {
+  .galery {
+    height: 100vh;
+  }
 }
 
 .about {

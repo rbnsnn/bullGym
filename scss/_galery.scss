@@ -24,7 +24,7 @@
 .swiper-container{
   position: relative;
   margin: 0 auto;
-  height: auto;
+  height: 70vh;
   width: 100%;
   overflow: hidden;
 }
@@ -57,4 +57,10 @@
 
 .swiper-button-next {
   color: $color-yellow !important;
+}
+
+@media screen and (min-width: 768px){
+  .galery{
+    height: 100vh;
+  }
 }
