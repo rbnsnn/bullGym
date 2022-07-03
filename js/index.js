@@ -1,6 +1,6 @@
 const preloader = document.querySelector('.preloader')
 window.onload = () => {
-    preloader.style.display = 'none'
+    preloader.classList.add = 'loaded'
 }
 
 
