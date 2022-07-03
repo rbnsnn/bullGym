@@ -1,7 +1,8 @@
+
 const preloader = document.querySelector('.preloader')
-window.onload = () => {
-    preloader.classList.add = 'loaded'
-}
+window.addEventListener('load', () => {
+    preloader.classList = 'preloader loaded'
+})
 
 
 const expandAbout = document.querySelector('.about__expand')
