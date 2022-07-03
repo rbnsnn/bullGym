@@ -15,6 +15,10 @@
 </head>
 <body>
     <div class="content">
+
+        <div class="preloader">
+            <div class="preloader__item"></div>
+        </div>
         
         <header class="header">
             
@@ -24,30 +28,31 @@
                 <img src="./images/logo.png" alt="bull gym" class="logo__text">
             </div>
 
-            <nav class="navigation">
-                <input id="menu__toggle" type="checkbox" />
-                <label class="menu__btn" for="menu__toggle">
-                <span></span>
-                </label>
-                <ul class="menu__box">
-                    <li><a class="menu__item" href="#">HOME</a></li>
-                    <li><a class="menu__item" href="#pricing">CENNIK</a></li>
-                    <li><a class="menu__item" href="#trainings">TRENINGI</a></li>
-                    <li><a class="menu__item" href="#galery">GALERIA</a></li>
-                    <li><a class="menu__item" href="#about">O NAS</a></li>
-                    <li><a class="menu__item" href="#contact">KONTAKT</a></li>
-                    <div class="menu__icons">
-                    <li><a class="menu__item menu__item--icon" href="https://www.facebook.com/BullGymkrosno"><i class="fa-brands fa-facebook-square"></i></a></li>
-                    <li><a class="menu__item menu__item--icon" href=""><i class="fa-solid fa-phone"></i></a></li>
-                    <li><a class="menu__item menu__item--icon" href=""><i class="fa-solid fa-envelope"></i></a></li>
-                </div>
-                </ul>
-            </nav>
+                <nav class="navigation">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="#">HOME</a></li>
+                        <li><a class="menu__item" href="#pricing">CENNIK</a></li>
+                        <li><a class="menu__item" href="#trainings">TRENINGI</a></li>
+                        <li><a class="menu__item" href="#galery">GALERIA</a></li>
+                        <li><a class="menu__item" href="#about">O NAS</a></li>
+                        <li><a class="menu__item" href="#contact">KONTAKT</a></li>
+                        <div class="menu__icons">
+                        <li><a class="menu__item menu__item--icon" href="https://www.facebook.com/BullGymkrosno"><i class="fa-brands fa-facebook-square"></i></a></li>
+                        <li><a class="menu__item menu__item--icon" href=""><i class="fa-solid fa-phone"></i></a></li>
+                        <li><a class="menu__item menu__item--icon" href=""><i class="fa-solid fa-envelope"></i></a></li>
+                    </div>
+                    </ul>
+                </nav>
             </div>
+
             <h1 class="header__slogan">Zrób pierwszy <span class="header__slogan header__slogan--last">krok</span></h1>
             <h2 class="header__slogan-second">Rozpocznij treningi na naszej siłowni</h2>
 
-            <button class="header__btn">KUP KARNET</button>
+            <a href="https://google.com" class="header__btn">KUP KARNET</a>
             <div class="header__back-to-top"><i class="fa-solid fa-angles-up"></i></div>
         </header>
 
@@ -93,7 +98,7 @@
             </div>
 
             <div class="trainings-element">
-                <h4 class="trainings-element__info">Po więcej informacji zapraszamy do <a href="" class="trainings-element__link">kontaktu</a></h4>
+                <h4 class="trainings-element__info">Po więcej informacji zapraszamy do <a href="#contact" class="trainings-element__link">kontaktu</a></h4>
             </div>
 
         </section>
@@ -132,7 +137,7 @@
 
             Prowadzimy sprzedaż suplementów oraz odżywek, których zadaniem jest dostarczanie stymulatorów i substancji budulcowych oraz niwelowanie objawów zmęczenia i spalanie tkanki tłuszczowej. Pomożemy w doborze produktów w zależności od Państwa potrzeb. Zapraszamy do skorzystania z oferty naszej siłowni!</div>
 
-            <a class="about__expand"><span class="about__expand expand">ROZWIŃ</span> <i class="fa-solid fa-angles-down expand-arrow"></i></a>
+            <span class="about__expand"><span class="expand">ROZWIŃ</span> <i class="fa-solid fa-angles-down expand-arrow"></i></span>
 
             <div class="about__hours-title">GODZINY OTWARCIA</div>
             <div class="about__hours-item">
@@ -144,27 +149,32 @@
                 <div class="hours-item__content">10:00 - 13:00</div>
             </div>
             <div class="about__hours-item">
-                <div class="hours-item__title">NIEDZIELA</div>
+                <div class="hours-item__title">NIEDZIELA:</div>
                 <div class="hours-item__content">NIECZYNNE</div>
             </div>
         </section>
 
         <section class="contact" id="contact">
-            <div class="contact__item">
-                <a href="https://www.facebook.com/BullGymkrosno"><i class="fa-brands fa-facebook-square"></i></a>
-                <div class="contact__item-text">BullGymKrosno</div>
+            <div class="contact__row">
+                <div class="contact__item">
+                    <a href="https://www.facebook.com/BullGymkrosno"><i class="fa-brands fa-facebook-square"></i></a>
+                    <div class="contact__item-text">BullGymKrosno</div>
+                </div>
+                <div class="contact__item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="contact__item-text">797 316 243</div>
+                </div>
             </div>
-            <div class="contact__item">
-                <i class="fa-solid fa-phone"></i>
-                <div class="contact__item-text">797 316 243</div>
-            </div>
-            <div class="contact__item">
-                <i class="fa-solid fa-location-dot"></i>
-                <div class="contact__item-text">Aleja Jana Pawła II 28A 38-400 Krosno</div>
-            </div>
-            <div class="contact__item">
-                <i class="fa-solid fa-envelope"></i>
-                <div class="contact__item-text">kontakt@bullgym.pl</div>
+
+            <div class="contact__row">
+                <div class="contact__item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="contact__item-text">Aleja Jana Pawła II 28A 38-400 Krosno</div>
+                </div>
+                <div class="contact__item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="contact__item-text">kontakt@bullgym.pl</div>
+                </div>
             </div>
         </section>
 

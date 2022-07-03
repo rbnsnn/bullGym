@@ -43,12 +43,14 @@
     &__slogan-second {  
         margin-bottom: 100px; 
         line-height: 2.5rem;
+        font-size: 1.6rem;
         text-align: center;
         color: $color-yellow;
     }
 
     &__btn {
         background-color: transparent;
+        text-decoration: none;
         margin: 0 auto 120px auto;
         padding: 12px 48px;
         width: fit-content;
@@ -91,8 +93,13 @@
             z-index: 999;
     
             > i {
+                cursor: pointer;
                 color: $color-yellow;
                 font-size: 5rem;
+
+                &:hover{
+                    color: $color-font;
+                }
             }
         }
 

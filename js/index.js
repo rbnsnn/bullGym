@@ -1,3 +1,9 @@
+const preloader = document.querySelector('.preloader')
+window.onload = () => {
+    preloader.style.display = 'none'
+}
+
+
 const expandAbout = document.querySelector('.about__expand')
 const expandContent = document.querySelector('.about__expanded-content')
 const expandSpan = document.querySelector('.expand')

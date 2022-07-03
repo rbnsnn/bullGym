@@ -1,12 +1,16 @@
 .about {
+    margin-top: 50px;
     padding: 15px;
     font-family: 'GoodTimes';
     font-weight: 400;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+
+    .expand{
+        font-size: 2.4rem;
+    }
 
     &__title{
         font-size: 3.6rem;
@@ -21,6 +25,9 @@
     }
 
     &__expand{
+        margin: 0 auto;
+        width: max-content;
+        cursor: pointer;
         font-size: 2.4rem;
         color: $color-yellow;
 
@@ -30,8 +37,9 @@
     }
 
     &__expanded-content{
-        cursor: pointer;
+        margin: 0 auto;
         max-height: 0px;
+        max-width: 50%;
         font-family: 'Amble';
         font-size: 2.4rem;
         color: $color-font;
@@ -67,3 +75,41 @@
         }
     }
 }
+
+@media screen and (min-width: 768px){
+    .about{
+        margin-top: 0;
+
+        &__expand{
+
+            &:hover{
+                color: $color-font
+            }
+        }
+
+        &__hours-title {
+            margin-top: 80px;
+            font-size: 3.6rem;
+            color: $color-yellow;
+            margin-bottom: 30px;
+        }
+    
+        &__hours-item{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            .hours-item__title {
+                font-size: 2.4rem;
+                color: $color-yellow;
+            }
+    
+            .hours-item__content {
+                font-size: 2.4rem;
+                color: $color-font;
+            }
+        }
+    }
+  }
