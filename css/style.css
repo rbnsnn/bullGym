@@ -831,7 +831,7 @@ body {
 .about__expanded-content {
   margin: 0 auto;
   max-height: 0px;
-  max-width: 50%;
+  width: auto;
   font-family: 'Amble';
   font-size: 2.4rem;
   color: #E5E5E5;
@@ -906,6 +906,9 @@ body {
   .about__hours-item .hours-item__content {
     font-size: 2.4rem;
     color: #E5E5E5;
+  }
+  .about__expanded-content {
+    max-width: 50%;
   }
 }
 

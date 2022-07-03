@@ -39,7 +39,7 @@
     &__expanded-content{
         margin: 0 auto;
         max-height: 0px;
-        max-width: 50%;
+        width: auto;
         font-family: 'Amble';
         font-size: 2.4rem;
         color: $color-font;
@@ -110,6 +110,10 @@
                 font-size: 2.4rem;
                 color: $color-font;
             }
+        }
+
+        &__expanded-content{
+            max-width: 50%;
         }
     }
   }
