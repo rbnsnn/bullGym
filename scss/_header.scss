@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    
+
     .logo{
         margin-top: 10px;
         margin-bottom: 80px;
@@ -70,6 +70,14 @@
         }
     }
 
+    &__back-to-top {
+        display: none;
+
+        > i {
+            display: none;
+        }
+    }
+
     
 }
 
@@ -89,7 +97,6 @@
         }
 
         &__back-to-top {
-            display: none;
             position: fixed;
             right: 50px;
             bottom: 50px;

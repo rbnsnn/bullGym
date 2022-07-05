@@ -279,6 +279,14 @@ body {
   background-color: #FAAd37;
 }
 
+.header__back-to-top {
+  display: none;
+}
+
+.header__back-to-top > i {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .header .logo {
     position: relative;
@@ -291,7 +299,6 @@ body {
     font-size: 1.6rem;
   }
   .header__back-to-top {
-    display: none;
     position: fixed;
     right: 50px;
     bottom: 50px;
