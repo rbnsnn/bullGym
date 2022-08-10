@@ -40,13 +40,14 @@
         }
     }
 
-    &__slogan-second {  
+    &__slogan-second {
+        font-family: 'GoodTimes';  
         margin-top: 20px;
         margin-bottom: 100px; 
         line-height: 2.5rem;
         font-size: 1rem;
         text-align: center;
-        color: $color-yellow;
+        color: $color-font;
     }
 
     &__btn {
@@ -83,16 +84,17 @@
 
 @media screen and (min-width: 768px){
     .header{
-    
+        padding-top: 300px;
+        height: 100vh;
         .logo {
-            position: relative;
-            margin-top: 25px;
-            min-width: 330px;
-            max-width: 330px;
+            display: none;
         }
 
         &__slogan-second {
-            margin-top: 130px;
+            display: flex;
+            align-self: center;
+            width: 70vw;
+            margin-top: 70px;
             font-size: 1.6rem;
         }
 
@@ -103,6 +105,7 @@
             z-index: 999;
     
             > i {
+                display: block;
                 cursor: pointer;
                 color: $color-yellow;
                 font-size: 5rem;
@@ -114,7 +117,7 @@
         }
 
         &__btn {
-            margin-top: 50px;
+            margin-top: 0px;
         }
 
     }

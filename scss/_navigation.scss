@@ -98,6 +98,10 @@
         &:hover {
             color: $color-yellow;
         } 
+
+        &__logo {
+            display: none;
+        }
     }
 
     .menu__icons {
@@ -132,15 +136,22 @@
 @media screen and (min-width: 768px){
 
     .logo-menu__container {
-        margin-bottom: 100px;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%);
+        top: -40px;
+        z-index: 9999;
+        background:rgba(0, 0, 0, .7);
+        padding-top: 60px;
+        margin-top: 40px;
+        margin-bottom: 200px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .navigation {
-        position: sticky;
-        top: 0;
+        
         .menu__box {
             display: flex;
             flex-direction: row;
@@ -157,6 +168,7 @@
         }
 
         .menu__item {
+            white-space: nowrap;
             display: flex;
             padding: 0px 10px;
             color: $color-font;
@@ -166,6 +178,29 @@
             text-decoration: none;
             letter-spacing: normal;
             transition-duration: .25s;
+            
+            &__logo {
+                margin-top: 100px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                // background-color: $color-yellow;
+            
+                &--image{
+                        margin-bottom: 15px;
+                        max-width: 100%;
+                        height: auto;
+                        // opacity: 80%;
+                }
+                
+                &--text{
+                        max-width: 100%;
+                        height: auto;
+                }
+                
+            }
         }
 
         .menu__btn {
@@ -183,7 +218,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-bottom: 150px;
+        margin-bottom: 250px;
     }
     .navigation {
 

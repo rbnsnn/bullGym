@@ -74,3 +74,16 @@ backToTop.addEventListener('click', () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 })
+
+const policyLink = document.querySelector('.policy__link')
+const modal = document.querySelector('.modal')
+const cardButton = document.querySelector('.card__button')
+
+policyLink.addEventListener('click', (e) => {
+    e.preventDefault()
+    modal.style.visibility = 'visible'
+})
+
+cardButton.addEventListener('click', () => {
+    modal.style.visibility = 'hidden'
+})

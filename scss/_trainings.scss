@@ -5,13 +5,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    overflow: auto;
 
     .trainings-element {
         margin-top: 55px;
 
+        img {
+            max-width: 100%;
+        }
         &__title {
+            margin-top: 30px;
             color: $color-yellow;
             font-size: 3.6rem;
         }
@@ -49,16 +53,23 @@
 
 @media screen and (min-width: 768px){
     .trainings{
-        margin-top: 0;
-        background-image: url('../images/trainings-background.jpg');
-        background-size: cover;
         height: 100vh;
-        background-attachment: fixed;
+        margin-top: 50px;
 
         .trainings-element{
-            max-width: 40%;
-            position: relative;
-            left: 15%;
+            max-width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+
+            img {
+                max-width: 50%;
+            }
+
+        }
+        .trainings-element--reverse {
+            flex-direction: row-reverse;
         }
     }
 }

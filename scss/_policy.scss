@@ -1,0 +1,124 @@
+.policy {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__link {
+        font-family: 'Amble';
+        color: $color-yellow;
+        font-size: 1.8rem;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-font;
+        }
+    }
+
+    .modal {
+        visibility: hidden;
+        z-index: 99999;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        backdrop-filter: blur(10px);
+
+        .card {
+        width: 90%;
+        height: 90%;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #000;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        font-family: 'GoodTimes';
+        color: $color-font;
+        overflow-y: scroll;
+        scrollbar-color: $color-yellow $color-dark;   
+
+            &__title {
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 2rem;
+                color: $color-yellow
+                
+            }
+
+            &__content {
+                font-family: 'Amble';
+            
+                ol {
+                    
+                    margin-top: 20px;
+                    li{
+                        font-size: 1.2rem;
+                        margin-top: 10px;
+                    }
+                }
+                
+            }
+            &__button {
+                font-family: 'GoodTimes';
+                cursor: pointer;
+                background-color: transparent;
+                color: $color-yellow;
+                font-size: 2rem;
+                margin-top: 30px;
+                margin-bottom: 10px;
+
+                &:hover {
+                    color: $color-font;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .policy {
+
+        .modal {
+    
+            .card {
+            width: 90%;
+            height: 90%;
+            color: $color-font;
+            overflow-y: scroll;
+            scrollbar-color: $color-yellow $color-dark;
+            padding: 100px;  
+    
+                &__title {
+                    margin-bottom: 20px;
+                    font-size: 2.5rem; 
+                }
+    
+                &__content {
+                    
+                    h3 {
+                        text-align: center;
+                        font-size: 1.8rem;
+                    }
+    
+                    ol {
+                        margin-top: 20px;
+                        li{
+                            font-size: 1.8rem;
+                            margin-top: 10px;
+                        }
+                    }
+                    
+                }
+                &__button {
+                    margin-top: 50px;
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+}
