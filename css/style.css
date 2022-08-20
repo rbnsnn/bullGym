@@ -777,8 +777,10 @@ body {
   .trainings {
     height: 100vh;
     margin-top: 50px;
+    margin-bottom: 70px;
   }
   .trainings .trainings-element {
+    max-height: 50%;
     max-width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1050,10 +1052,10 @@ body {
 
 @media screen and (min-width: 768px) {
   .contact {
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1065,13 +1067,13 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .contact__row .contact__item {
-    margin: 50px 150px;
+    margin: 50px 100px;
     text-align: left;
     max-width: 350px;
     display: -webkit-box;

@@ -61,13 +61,18 @@ const swiper = new Swiper(".swiper-container", {
 });
 
 const backToTop = document.querySelector('.header__back-to-top')
+const menuBull = document.querySelector('.menu__item__logo')
 
 window.onscroll = () => {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         backToTop.style.display = "block";
+
     } else {
         backToTop.style.display = "none";
     }
+
+    menuBull.style.opacity = (100 - (document.body.scrollTop || document.documentElement.scrollTop))
+
 }
 
 backToTop.addEventListener('click', () => {

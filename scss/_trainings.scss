@@ -55,8 +55,10 @@
     .trainings{
         height: 100vh;
         margin-top: 50px;
+        margin-bottom: 70px;
 
         .trainings-element{
+            max-height: 50%;
             max-width: 80%;
             display: flex;
             justify-content: center;
