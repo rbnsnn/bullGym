@@ -711,7 +711,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .pricing {
-    height: 100vh;
     background-position: center;
     background-attachment: fixed;
   }
