@@ -80,15 +80,51 @@ backToTop.addEventListener('click', () => {
     document.documentElement.scrollTop = 0;
 })
 
-const policyLink = document.querySelector('.policy__link')
-const modal = document.querySelector('.modal')
-const cardButton = document.querySelector('.card__button')
 
-policyLink.addEventListener('click', (e) => {
+const privacyLink = document.querySelector('.privacy__link')
+const privacyModal = document.querySelector('.privacy__modal')
+const privacyCloseButton = document.querySelector('.privacy__modal--close')
+
+privacyLink.addEventListener('click', (e) => {
     e.preventDefault()
-    modal.style.visibility = 'visible'
+    privacyModal.style.visibility = 'visible'
 })
 
-cardButton.addEventListener('click', () => {
-    modal.style.visibility = 'hidden'
+privacyCloseButton.addEventListener('click', () => {
+    privacyModal.style.visibility = 'hidden'
+})
+
+const statuteLink = document.querySelector('.statute__link')
+const statuteModal = document.querySelector('.statute__modal')
+const statuteCloseButton = document.querySelector('.statute__modal--close')
+
+statuteLink.addEventListener('click', (e) => {
+    e.preventDefault()
+    statuteModal.style.visibility = 'visible'
+})
+
+statuteCloseButton.addEventListener('click', () => {
+    statuteModal.style.visibility = 'hidden'
+})
+
+const formButton = document.querySelector('.header__btn')
+const statuteAccept = document.querySelector('#statute-accept')
+const checkboxText = document.querySelector('.header__form-text')
+
+
+formButton.addEventListener('click', (e) => {
+    e.preventDefault()
+    if (statuteAccept.checked) {
+        window.location.href = "https://secure.tpay.com/?h=b780a0d2b7dabaddab75a5b424b73bfabee16228"
+    } else {
+        checkboxText.classList.add('header__form--error')
+        return
+    }
+
+})
+
+statuteAccept.addEventListener('change', () => {
+    if (statuteAccept.checked) {
+        checkboxText.classList.remove('header__form--error')
+    }
 })

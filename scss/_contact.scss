@@ -17,6 +17,15 @@
             font-size: 3.2rem;
             color: $color-yellow;
         }
+        a{
+            font: inherit;
+            color: $color-font;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-yellow
+            }
+        }
 
         &-text {
             font-size: 2.4rem;
@@ -42,6 +51,8 @@
                 display: flex;
                 flex-direction: row;
                 gap: 20px;
+
+                
             }
         }
     }

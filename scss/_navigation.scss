@@ -96,6 +96,7 @@
         transition-duration: .25s;
         
         &:hover {
+            cursor: pointer;
             color: $color-yellow;
         } 
 

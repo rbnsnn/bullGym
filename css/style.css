@@ -247,19 +247,24 @@ body {
 }
 
 .header__slogan-second {
-  font-family: 'GoodTimes';
+  font-family: 'Amble';
   margin-top: 20px;
   margin-bottom: 100px;
   line-height: 2.5rem;
-  font-size: 1rem;
+  font-size: 1.6rem;
+  font-weight: normal;
   text-align: center;
   color: #E5E5E5;
 }
 
 .header__btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   background-color: transparent;
   text-decoration: none;
-  margin: 0 auto 120px auto;
+  margin-bottom: 20px;
   text-indent: 1rem;
   padding: 12px 48px;
   width: -webkit-fit-content;
@@ -273,6 +278,7 @@ body {
   border-radius: 5px;
   -webkit-transition: 0.25s;
   transition: 0.25s;
+  cursor: pointer;
 }
 
 .header__btn:hover {
@@ -286,6 +292,31 @@ body {
 
 .header__back-to-top > i {
   display: none;
+}
+
+.header__form {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__form-text {
+  font-family: 'Amble';
+  color: #FAAd37;
+  letter-spacing: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.header__form--error {
+  color: red;
 }
 
 @media screen and (min-width: 768px) {
@@ -323,6 +354,9 @@ body {
   }
   .header__btn {
     margin-top: 0px;
+  }
+  .header__form {
+    margin-bottom: 0p;
   }
 }
 
@@ -440,6 +474,7 @@ body {
 }
 
 .navigation .menu__item:hover {
+  cursor: pointer;
   color: #FAAd37;
 }
 
@@ -676,7 +711,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .pricing {
-    background-image: url("../images/pricing-background.jpg");
     height: 100vh;
     background-position: center;
     background-attachment: fixed;
@@ -1043,6 +1077,16 @@ body {
   color: #FAAd37;
 }
 
+.contact__item a {
+  font: inherit;
+  color: #E5E5E5;
+  text-decoration: none;
+}
+
+.contact__item a:hover {
+  color: #FAAd37;
+}
+
 .contact__item-text {
   font-size: 2.4rem;
   color: #E5E5E5;
@@ -1122,6 +1166,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 100px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
