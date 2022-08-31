@@ -92,11 +92,19 @@
             font-family: 'Amble';
             color: $color-yellow;
             letter-spacing: 0.4rem;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
 
         &--error {
             color: red
+        }
+
+        p {
+            color: $color-font;
+            font-family: Amble;
+            letter-spacing: normal;
+            margin-top: 10px;
+            font-size: 1rem;
         }
     }
 }

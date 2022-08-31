@@ -312,11 +312,19 @@ body {
   font-family: 'Amble';
   color: #FAAd37;
   letter-spacing: 0.4rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .header__form--error {
   color: red;
+}
+
+.header__form p {
+  color: #E5E5E5;
+  font-family: Amble;
+  letter-spacing: normal;
+  margin-top: 10px;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {
